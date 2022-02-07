@@ -18,4 +18,8 @@
     <string name="btn_0" translatable="false">0</string>
     <string name="btnDot" translatable="false">.</string>
     <string name="btnEquals" translatable="false">=</string>
+    <string name="theme_homework">Theme.Homework</string>
+    <string name="theme_yellow">Theme.Yellow</string>
+    <string name="theme_green">Theme.Green</string>
+    <string name="theme_blue">Theme.Blue</string>
 </resources>

@@ -7,8 +7,8 @@
 
     <TextView
         android:id="@+id/tvWindowBtn"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_columnSpan="4"
         android:layout_gravity="fill"
         android:textSize="@dimen/button_text_size" />
@@ -160,6 +160,43 @@
         android:text="@string/btnEquals"
         android:textSize="@dimen/button_text_size" />
 
+    <RadioGroup
+        android:id="@+id/radioBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"/>
+
+    <com.google.android.material.radiobutton.MaterialRadioButton
+        android:id="@+id/radioButtonMaterialHomework"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="6"
+        android:layout_column="0"
+        android:text="@string/theme_homework" />
+
+    <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/radioButtonMaterialYellow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="7"
+            android:layout_column="0"
+            android:text="@string/theme_yellow" />
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/radioButtonMaterialGreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="8"
+            android:layout_column="0"
+            android:text="@string/theme_green" />
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/radioButtonMaterialBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="9"
+            android:layout_column="0"
+            android:text="@string/theme_blue" />
 
 
 </GridLayout>
