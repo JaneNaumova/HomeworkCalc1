@@ -1,18 +1,12 @@
 package com.example.homework;
 
-import static java.lang.String.format;
-
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.os.Bundle;
-
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity{
 
@@ -50,12 +44,13 @@ public class MainActivity extends AppCompatActivity{
     Button btnDot;
     Button btnEquals;
     TextView tvWindowBtn;
-    TextView tvWindowTxt;
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //setTheme(R.style.Theme_MaterialComponents_DayNight_NoActionBar_ThemeRed);
         setContentView(R.layout.activity_main);
 
         intView();
@@ -66,22 +61,22 @@ public class MainActivity extends AppCompatActivity{
     @Override
     protected void onSaveInstanceState(@NonNull Bundle outState) {
         super.onSaveInstanceState(outState);
-        outState.putString("Division", String.valueOf(Division));
+        outState.putString("Division", Division);
         outState.putInt("_7",_7);
         outState.putInt("_8",_8);
         outState.putInt("_9",_9);
-        outState.putString("Multiplication", String.valueOf(Multiplication));
+        outState.putString("Multiplication", Multiplication);
         outState.putInt("_4",_4);
         outState.putInt("_5",_5);
         outState.putInt("_6",_6);
-        outState.putString("Minus", String.valueOf(Minus));
+        outState.putString("Minus", Minus);
         outState.putInt("_1",_1);
         outState.putInt("_2",_2);
         outState.putInt("_3",_3);
-        outState.putString("Plus", String.valueOf(Plus));
+        outState.putString("Plus", Plus);
         outState.putInt("_0",_0);
-        outState.putString("Dot", String.valueOf(Dot));
-        outState.putString("Equals", String.valueOf(Equals));
+        outState.putString("Dot",Dot);
+        outState.putString("Equals", Equals);
 
     }
 
@@ -89,52 +84,53 @@ public class MainActivity extends AppCompatActivity{
     protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
         Division = savedInstanceState.getString("Division");
-        tvWindowTxt.setText(String.format("%s", tvWindowTxt));
+        tvWindowBtn.setText(String.format("%s", tvWindowBtn));
 
         _7 = savedInstanceState.getInt("_7");
-        tvWindowBtn.setText(String.format("%d", tvWindowBtn));
+        tvWindowBtn.setText(String.format("%s", tvWindowBtn));
 
         _8 = savedInstanceState.getInt("_8");
-        tvWindowBtn.setText(String.format("%d", tvWindowBtn));
+        tvWindowBtn.setText(String.format("%s", tvWindowBtn));
 
         _9 = savedInstanceState.getInt("_9");
-        tvWindowBtn.setText(String.format("%d", tvWindowBtn));
+        tvWindowBtn.setText(String.format("%s", tvWindowBtn));
 
         Multiplication = savedInstanceState.getString("Multiplication");
-        tvWindowTxt.setText(String.format("%s", tvWindowTxt));
+        tvWindowBtn.setText(String.format("%s", tvWindowBtn));
 
         _4 = savedInstanceState.getInt("_4");
-        tvWindowBtn.setText(String.format("%d", tvWindowBtn));
+        tvWindowBtn.setText(String.format("%s", tvWindowBtn));
 
         _5 = savedInstanceState.getInt("_5");
-        tvWindowBtn.setText(String.format("%d", tvWindowBtn));
+        tvWindowBtn.setText(String.format("%s", tvWindowBtn));
 
         _6 = savedInstanceState.getInt("_6");
-        tvWindowBtn.setText(String.format("%d", tvWindowBtn));
+        tvWindowBtn.setText(String.format("%s", tvWindowBtn));
 
         Minus = savedInstanceState.getString("Minus");
-        tvWindowTxt.setText(String.format("%s", tvWindowTxt));
+        tvWindowBtn.setText(String.format("%s", tvWindowBtn));
 
         _1 = savedInstanceState.getInt("_1");
-        tvWindowBtn.setText(String.format("%d", tvWindowBtn));
+        tvWindowBtn.setText(String.format("%s", tvWindowBtn));
 
         _2 = savedInstanceState.getInt("_2");
-        tvWindowBtn.setText(String.format("%d", tvWindowBtn));
+        tvWindowBtn.setText(String.format("%s", tvWindowBtn));
 
         _3 = savedInstanceState.getInt("_3");
-        tvWindowBtn.setText(String.format("%d", tvWindowBtn));
+        tvWindowBtn.setText(String.format("%s", tvWindowBtn));
 
         Plus = savedInstanceState.getString("Plus");
-        tvWindowTxt.setText(String.format("%s", tvWindowTxt));
+        tvWindowBtn.setText(String.format("%s", tvWindowBtn));
 
         _0 = savedInstanceState.getInt("_0");
-        tvWindowBtn.setText(String.format("%d", tvWindowBtn));
+        tvWindowBtn.setText(String.format("%s", tvWindowBtn));
 
         Dot = savedInstanceState.getString("Dot");
-        tvWindowTxt.setText(String.format("%s", tvWindowTxt));
+        tvWindowBtn.setText(String.format("%s", tvWindowBtn));
 
         Equals = savedInstanceState.getString("Equals");
-        tvWindowTxt.setText(String.format("%s", tvWindowTxt));
+        tvWindowBtn.setText(String.format("%s", tvWindowBtn));
+
 
     }
 
@@ -143,83 +139,83 @@ public class MainActivity extends AppCompatActivity{
     private void setListeners() {
         btnDivision.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {tvWindowTxt.setText(format("/"));}
+            public void onClick(View v) {tvWindowBtn.setText("/");}
         });
 
         btn_7.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {tvWindowBtn.setText(format("7"));}
+            public void onClick(View v) {tvWindowBtn.setText("7");}
         });
 
         btn_8.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {tvWindowBtn.setText(format("8"));}
+            public void onClick(View v) {tvWindowBtn.setText("8");}
         });
 
         btn_9.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {tvWindowBtn.setText(format("9"));}
+            public void onClick(View v) {tvWindowBtn.setText("9");}
         });
 
         btnMultiplication.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {tvWindowTxt.setText(format("*"));}
+            public void onClick(View v) {tvWindowBtn.setText("*");}
         });
 
         btn_4.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {tvWindowBtn.setText(format("4"));}
+            public void onClick(View v) {tvWindowBtn.setText("4");}
         });
 
         btn_5.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {tvWindowBtn.setText(format("5"));}
+            public void onClick(View v) {tvWindowBtn.setText("5");}
         });
 
         btn_6.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {tvWindowBtn.setText(format("6"));}
+            public void onClick(View v) {tvWindowBtn.setText("6");}
         });
 
         btnMinus.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {tvWindowTxt.setText(format("-"));}
+            public void onClick(View v) {tvWindowBtn.setText("-");}
         });
 
         btn_1.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {tvWindowBtn.setText(format("1"));
+            public void onClick(View v) {tvWindowBtn.setText("1");
             }
         });
 
         btn_2.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {tvWindowBtn.setText(format("2"));}
+            public void onClick(View v) {tvWindowBtn.setText("2");}
         });
 
         btn_3.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {tvWindowBtn.setText(format("3"));}
+            public void onClick(View v) {tvWindowBtn.setText("3");}
         });
 
         btnPlus.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {tvWindowTxt.setText(format("+"));}
+            public void onClick(View v) {tvWindowBtn.setText("+");}
         });
 
         btn_0.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {tvWindowBtn.setText(format("0"));}
+            public void onClick(View v) {tvWindowBtn.setText("0");}
         });
 
         btnDot.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {tvWindowTxt.setText(format("."));}
+            public void onClick(View v) {tvWindowBtn.setText(".");}
         });
 
         btnEquals.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {tvWindowTxt.setText(format("="));}
+            public void onClick(View v) {tvWindowBtn.setText("=");}
         });
 
     }
@@ -242,7 +238,7 @@ public class MainActivity extends AppCompatActivity{
         btnDot = findViewById(R.id.btnDot);
         btnEquals = findViewById(R.id.btnEquals);
         tvWindowBtn = findViewById(R.id.tvWindowBtn);
-        tvWindowTxt = findViewById(R.id.tvWindowTxt);
+
     }
 
 

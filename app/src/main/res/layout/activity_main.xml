@@ -13,14 +13,6 @@
         android:layout_gravity="fill"
         android:textSize="@dimen/button_text_size" />
 
-    <TextView
-        android:id="@+id/tvWindowTxt"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_columnSpan="4"
-        android:layout_gravity="fill"
-        android:textSize="@dimen/button_text_size" />
-
 
     <Button
         android:id="@+id/btnAc"

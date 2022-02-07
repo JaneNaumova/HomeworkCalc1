@@ -6,7 +6,7 @@
     android:columnCount="4">
 
     <TextView
-        android:id="@+id/tvWindow"
+        android:id="@+id/tvWindowBtn"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_columnSpan="4"
