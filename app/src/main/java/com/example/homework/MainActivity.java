@@ -3,12 +3,14 @@ package com.example.homework;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity{
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private String Division;
     private int _7;
@@ -50,8 +52,12 @@ public class MainActivity extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setTheme(R.style.Theme_MaterialComponents_DayNight_NoActionBar_ThemeRed);
+        //setTheme(R.style.Theme_MaterialComponents_DayNight_NoActionBar);
         setContentView(R.layout.activity_main);
+        ((RadioButton) findViewById(R.id.radioButtonMaterialHomework)).setOnClickListener(this);
+        ((RadioButton) findViewById(R.id.radioButtonMaterialYellow)).setOnClickListener(this);
+        ((RadioButton) findViewById(R.id.radioButtonMaterialGreen)).setOnClickListener(this);
+        ((RadioButton) findViewById(R.id.radioButtonMaterialBlue)).setOnClickListener(this);
 
         intView();
         setListeners();
@@ -61,7 +67,7 @@ public class MainActivity extends AppCompatActivity{
     @Override
     protected void onSaveInstanceState(@NonNull Bundle outState) {
         super.onSaveInstanceState(outState);
-        outState.putString("Division", Division);
+        /*outState.putString("Division", Division);
         outState.putInt("_7",_7);
         outState.putInt("_8",_8);
         outState.putInt("_9",_9);
@@ -76,60 +82,65 @@ public class MainActivity extends AppCompatActivity{
         outState.putString("Plus", Plus);
         outState.putInt("_0",_0);
         outState.putString("Dot",Dot);
-        outState.putString("Equals", Equals);
+        outState.putString("Equals", Equals);*/
+
+        outState.putString("text_key", tvWindowBtn.getText().toString());
 
     }
 
     @Override
     protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
-        Division = savedInstanceState.getString("Division");
-        tvWindowBtn.setText(String.format("%s", tvWindowBtn));
+        /*Division = savedInstanceState.getString("Division");
+        tvWindowBtn.setText(String.format("%s", Division));
 
         _7 = savedInstanceState.getInt("_7");
-        tvWindowBtn.setText(String.format("%s", tvWindowBtn));
+        tvWindowBtn.setText(String.format("%s", _7));
 
         _8 = savedInstanceState.getInt("_8");
-        tvWindowBtn.setText(String.format("%s", tvWindowBtn));
+        tvWindowBtn.setText(String.format("%s", _8));
 
         _9 = savedInstanceState.getInt("_9");
-        tvWindowBtn.setText(String.format("%s", tvWindowBtn));
+        tvWindowBtn.setText(String.format("%s", _9));
 
         Multiplication = savedInstanceState.getString("Multiplication");
-        tvWindowBtn.setText(String.format("%s", tvWindowBtn));
+        tvWindowBtn.setText(String.format("%s", Multiplication));
 
         _4 = savedInstanceState.getInt("_4");
-        tvWindowBtn.setText(String.format("%s", tvWindowBtn));
+        tvWindowBtn.setText(String.format("%s", _4));
 
         _5 = savedInstanceState.getInt("_5");
-        tvWindowBtn.setText(String.format("%s", tvWindowBtn));
+        tvWindowBtn.setText(String.format("%s", _5));
 
         _6 = savedInstanceState.getInt("_6");
-        tvWindowBtn.setText(String.format("%s", tvWindowBtn));
+        tvWindowBtn.setText(String.format("%s", _6));
 
         Minus = savedInstanceState.getString("Minus");
-        tvWindowBtn.setText(String.format("%s", tvWindowBtn));
+        tvWindowBtn.setText(String.format("%s", Minus));
 
         _1 = savedInstanceState.getInt("_1");
-        tvWindowBtn.setText(String.format("%s", tvWindowBtn));
+        tvWindowBtn.setText(String.format("%s", _1));
 
         _2 = savedInstanceState.getInt("_2");
-        tvWindowBtn.setText(String.format("%s", tvWindowBtn));
+        tvWindowBtn.setText(String.format("%s", _2));
 
         _3 = savedInstanceState.getInt("_3");
-        tvWindowBtn.setText(String.format("%s", tvWindowBtn));
+        tvWindowBtn.setText(String.format("%s", _3));
 
         Plus = savedInstanceState.getString("Plus");
-        tvWindowBtn.setText(String.format("%s", tvWindowBtn));
+        tvWindowBtn.setText(String.format("%s", Plus));
 
         _0 = savedInstanceState.getInt("_0");
-        tvWindowBtn.setText(String.format("%s", tvWindowBtn));
+        tvWindowBtn.setText(String.format("%s", _0));
 
         Dot = savedInstanceState.getString("Dot");
-        tvWindowBtn.setText(String.format("%s", tvWindowBtn));
+        tvWindowBtn.setText(String.format("%s", Dot));
 
         Equals = savedInstanceState.getString("Equals");
-        tvWindowBtn.setText(String.format("%s", tvWindowBtn));
+        tvWindowBtn.setText(String.format("%s", Equals));*/
+
+        String fullText = savedInstanceState.getString("text_key");
+        tvWindowBtn.setText(String.format("%s", fullText));
 
 
     }
@@ -242,4 +253,26 @@ public class MainActivity extends AppCompatActivity{
     }
 
 
+    @Override
+    public void onClick(View view) {
+       /* switch (view.getId()){
+            case R.id.radioButtonMaterialHomework:{
+                MainActivity.
+                break;
+            }
+            case R.id.radioButtonMaterialYellow:{
+                setTheme(R.style.Theme_Yellow);
+                break;
+            }
+            case R.id.radioButtonMaterialGreen:{
+                setTheme(R.style.Theme_Green);
+                break;
+            }
+            case R.id.radioButtonMaterialBlue:{
+                setTheme(R.style.Theme_Blue);
+                break;
+            }
+
+        }*/
+    }
 }

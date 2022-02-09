@@ -1,23 +1,23 @@
 <resources>
-    <string name="app_name" translatable="false">Homework</string>
-    <string name="btnAc" translatable="false">AC</string>
-    <string name="btnPercent" translatable="false">%</string>
-    <string name="btnDivision" translatable="false">/</string>
-    <string name="btn_7" translatable="false">7</string>
-    <string name="btn_8" translatable="false">8</string>
-    <string name="btn_9" translatable="false">9</string>
-    <string name="btnMultiplication" translatable="false">*</string>
-    <string name="btn_4" translatable="false">4</string>
-    <string name="btn_5" translatable="false">5</string>
-    <string name="btn_6" translatable="false">6</string>
-    <string name="btnMinus" translatable="false">-</string>
-    <string name="btn_1" translatable="false">1</string>
-    <string name="btn_2" translatable="false">2</string>
-    <string name="btn_3" translatable="false">3</string>
-    <string name="btnPlus" translatable="false">+</string>
-    <string name="btn_0" translatable="false">0</string>
-    <string name="btnDot" translatable="false">.</string>
-    <string name="btnEquals" translatable="false">=</string>
+    <string name="app_name">Homework</string>
+    <string name="btnAc">AC</string>
+    <string name="btnPercent">%</string>
+    <string name="btnDivision">/</string>
+    <string name="btn_7">7</string>
+    <string name="btn_8">8</string>
+    <string name="btn_9">9</string>
+    <string name="btnMultiplication">*</string>
+    <string name="btn_4">4</string>
+    <string name="btn_5">5</string>
+    <string name="btn_6">6</string>
+    <string name="btnMinus">-</string>
+    <string name="btn_1">1</string>
+    <string name="btn_2">2</string>
+    <string name="btn_3">3</string>
+    <string name="btnPlus">+</string>
+    <string name="btn_0">0</string>
+    <string name="btnDot">.</string>
+    <string name="btnEquals">=</string>
     <string name="theme_homework">Theme.Homework</string>
     <string name="theme_yellow">Theme.Yellow</string>
     <string name="theme_green">Theme.Green</string>
