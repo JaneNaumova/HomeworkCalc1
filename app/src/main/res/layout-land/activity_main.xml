@@ -2,14 +2,15 @@
 <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_gravity="center"
-    android:columnCount="4">
+    android:layout_gravity="top"
+    android:columnCount="8"
+    >
 
     <TextView
         android:id="@+id/tvWindowBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_columnSpan="4"
+        android:layout_columnSpan="8"
         android:layout_gravity="fill"
         android:textSize="@dimen/button_text_size" />
 
@@ -18,15 +19,14 @@
         android:id="@+id/btnAc"
         android:layout_columnSpan="2"
         android:layout_gravity="fill"
-        android:backgroundTint="@android:color/holo_red_dark"
         android:insetTop="0dp"
         android:text="@string/btnAc"
-        android:textSize="@dimen/button_text_size" />
+        android:textSize="@dimen/button_text_size"
+        android:layout_column="0"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnPercent"
         android:layout_gravity="fill"
-        android:backgroundTint="@android:color/holo_red_dark"
         android:insetTop="0dp"
         android:text="@string/btnPercent"
         android:textSize="@dimen/button_text_size" />
@@ -34,7 +34,6 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnDivision"
         android:layout_gravity="fill"
-        android:backgroundTint="@android:color/holo_red_dark"
         android:insetTop="0dp"
         android:text="@string/btnDivision"
         android:textSize="@dimen/button_text_size" />
@@ -45,7 +44,8 @@
         android:backgroundTint="@color/black"
         android:insetTop="0dp"
         android:text="@string/btn_7"
-        android:textSize="@dimen/button_text_size" />
+        android:textSize="@dimen/button_text_size"
+        android:layout_column="0"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_8"
@@ -77,7 +77,8 @@
         android:backgroundTint="@color/black"
         android:insetTop="0dp"
         android:text="@string/btn_4"
-        android:textSize="@dimen/button_text_size" />
+        android:textSize="@dimen/button_text_size"
+        android:layout_column="0"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_5"
@@ -109,7 +110,8 @@
         android:backgroundTint="@color/black"
         android:insetTop="0dp"
         android:text="@string/btn_1"
-        android:textSize="@dimen/button_text_size" />
+        android:textSize="@dimen/button_text_size"
+        android:layout_column="0"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_2"
@@ -142,7 +144,8 @@
         android:backgroundTint="@color/black"
         android:insetTop="0dp"
         android:text="@string/btn_0"
-        android:textSize="@dimen/button_text_size" />
+        android:textSize="@dimen/button_text_size"
+        android:layout_column="0"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnDot"
@@ -162,41 +165,35 @@
 
     <RadioGroup
         android:id="@+id/radioBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="top"/>
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill">
 
     <com.google.android.material.radiobutton.MaterialRadioButton
         android:id="@+id/radioButtonMaterialHomework"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_row="6"
-        android:layout_column="0"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:text="@string/theme_homework" />
 
     <com.google.android.material.radiobutton.MaterialRadioButton
-        android:id="@+id/radioButtonMaterialYellow"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_row="7"
-        android:layout_column="0"
-        android:text="@string/theme_yellow" />
-
-    <com.google.android.material.radiobutton.MaterialRadioButton
         android:id="@+id/radioButtonMaterialGreen"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_row="6"
-        android:layout_column="2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:text="@string/theme_green" />
 
     <com.google.android.material.radiobutton.MaterialRadioButton
         android:id="@+id/radioButtonMaterialBlue"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_row="7"
-        android:layout_column="2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:text="@string/theme_blue" />
+
+    <com.google.android.material.radiobutton.MaterialRadioButton
+        android:id="@+id/radioButtonMaterialYellow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/theme_yellow" />
+    </RadioGroup>
 
 
 </GridLayout>
