@@ -18,7 +18,6 @@
         android:id="@+id/btnAc"
         android:layout_columnSpan="2"
         android:layout_gravity="fill"
-        android:backgroundTint="@android:color/holo_red_dark"
         android:insetTop="0dp"
         android:text="@string/btnAc"
         android:textSize="@dimen/button_text_size" />
@@ -26,7 +25,6 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnPercent"
         android:layout_gravity="fill"
-        android:backgroundTint="@android:color/holo_red_dark"
         android:insetTop="0dp"
         android:text="@string/btnPercent"
         android:textSize="@dimen/button_text_size" />
@@ -34,7 +32,6 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnDivision"
         android:layout_gravity="fill"
-        android:backgroundTint="@android:color/holo_red_dark"
         android:insetTop="0dp"
         android:text="@string/btnDivision"
         android:textSize="@dimen/button_text_size" />
@@ -42,7 +39,6 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_7"
         android:layout_gravity="fill"
-        android:backgroundTint="@color/black"
         android:insetTop="0dp"
         android:text="@string/btn_7"
         android:textSize="@dimen/button_text_size" />
@@ -50,7 +46,6 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_8"
         android:layout_gravity="fill"
-        android:backgroundTint="@color/black"
         android:insetTop="0dp"
         android:text="@string/btn_8"
         android:textSize="@dimen/button_text_size" />
@@ -58,7 +53,6 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_9"
         android:layout_gravity="fill"
-        android:backgroundTint="@color/black"
         android:insetTop="0dp"
         android:text="@string/btn_9"
         android:textSize="@dimen/button_text_size" />
@@ -66,7 +60,6 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnMultiplication"
         android:layout_gravity="fill"
-        android:backgroundTint="@android:color/holo_red_dark"
         android:insetTop="0dp"
         android:text="@string/btnMultiplication"
         android:textSize="@dimen/button_text_size" />
@@ -74,7 +67,6 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_4"
         android:layout_gravity="fill"
-        android:backgroundTint="@color/black"
         android:insetTop="0dp"
         android:text="@string/btn_4"
         android:textSize="@dimen/button_text_size" />
@@ -82,7 +74,6 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_5"
         android:layout_gravity="fill"
-        android:backgroundTint="@color/black"
         android:insetTop="0dp"
         android:text="@string/btn_5"
         android:textSize="@dimen/button_text_size" />
@@ -90,7 +81,6 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_6"
         android:layout_gravity="fill"
-        android:backgroundTint="@color/black"
         android:insetTop="0dp"
         android:text="@string/btn_6"
         android:textSize="@dimen/button_text_size" />
@@ -98,7 +88,6 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnMinus"
         android:layout_gravity="fill"
-        android:backgroundTint="@android:color/holo_red_dark"
         android:insetTop="0dp"
         android:text="@string/btnMinus"
         android:textSize="@dimen/button_text_size" />
@@ -106,7 +95,6 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_1"
         android:layout_gravity="fill"
-        android:backgroundTint="@color/black"
         android:insetTop="0dp"
         android:text="@string/btn_1"
         android:textSize="@dimen/button_text_size" />
@@ -114,7 +102,6 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_2"
         android:layout_gravity="fill"
-        android:backgroundTint="@color/black"
         android:insetTop="0dp"
         android:text="@string/btn_2"
         android:textSize="@dimen/button_text_size" />
@@ -122,7 +109,6 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_3"
         android:layout_gravity="fill"
-        android:backgroundTint="@color/black"
         android:insetTop="0dp"
         android:text="@string/btn_3"
         android:textSize="@dimen/button_text_size" />
@@ -130,7 +116,6 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnPlus"
         android:layout_gravity="fill"
-        android:backgroundTint="@android:color/holo_red_dark"
         android:insetTop="0dp"
         android:text="@string/btnPlus"
         android:textSize="@dimen/button_text_size" />
@@ -139,7 +124,6 @@
         android:id="@+id/btn_0"
         android:layout_columnSpan="2"
         android:layout_gravity="fill"
-        android:backgroundTint="@color/black"
         android:insetTop="0dp"
         android:text="@string/btn_0"
         android:textSize="@dimen/button_text_size" />
@@ -147,7 +131,6 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnDot"
         android:layout_gravity="fill"
-        android:backgroundTint="@android:color/holo_red_dark"
         android:insetTop="0dp"
         android:text="@string/btnDot"
         android:textSize="@dimen/button_text_size" />
@@ -155,7 +138,6 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnEquals"
         android:layout_gravity="fill"
-        android:backgroundTint="@android:color/holo_red_dark"
         android:insetTop="0dp"
         android:text="@string/btnEquals"
         android:textSize="@dimen/button_text_size" />

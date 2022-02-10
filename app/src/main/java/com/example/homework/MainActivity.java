@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setTheme(R.style.Theme_MaterialComponents_DayNight_NoActionBar);
+        setTheme(App.firstTheme);
         setContentView(R.layout.activity_main);
         ((RadioButton) findViewById(R.id.radioButtonMaterialHomework)).setOnClickListener(this);
         ((RadioButton) findViewById(R.id.radioButtonMaterialYellow)).setOnClickListener(this);
@@ -255,24 +255,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View view) {
-       /* switch (view.getId()){
+        switch (view.getId()){
             case R.id.radioButtonMaterialHomework:{
-                MainActivity.
+                App.firstTheme = R.style.Theme_Homework;
                 break;
             }
             case R.id.radioButtonMaterialYellow:{
-                setTheme(R.style.Theme_Yellow);
+                App.firstTheme = R.style.Theme_Yellow;
                 break;
             }
             case R.id.radioButtonMaterialGreen:{
-                setTheme(R.style.Theme_Green);
+                App.firstTheme = R.style.Theme_Green;
                 break;
             }
             case R.id.radioButtonMaterialBlue:{
-                setTheme(R.style.Theme_Blue);
+                App.firstTheme = R.style.Theme_Blue;
                 break;
             }
+        }
+        recreate();
 
-        }*/
     }
 }
