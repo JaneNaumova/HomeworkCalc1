@@ -1,10 +1,10 @@
 package com.example.homework;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
-import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -48,11 +48,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     TextView tvWindowBtn;
 
 
+    private static final String PREF_MAME = ("key_pref");
+    private static final String PREF_THEME_KEY = ("key_pref_theme");
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setTheme(App.firstTheme);
+        setTheme(getAppTheme());
         setContentView(R.layout.activity_main);
         ((RadioButton) findViewById(R.id.radioButtonMaterialHomework)).setOnClickListener(this);
         ((RadioButton) findViewById(R.id.radioButtonMaterialYellow)).setOnClickListener(this);
@@ -257,23 +260,34 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.radioButtonMaterialHomework:{
-                App.firstTheme = R.style.Theme_Homework;
+                setAppTheme(R.style.Theme_Homework);
                 break;
             }
             case R.id.radioButtonMaterialYellow:{
-                App.firstTheme = R.style.Theme_Yellow;
+                setAppTheme(R.style.Theme_Yellow);
                 break;
             }
             case R.id.radioButtonMaterialGreen:{
-                App.firstTheme = R.style.Theme_Green;
+                setAppTheme(R.style.Theme_Green);
                 break;
             }
             case R.id.radioButtonMaterialBlue:{
-                App.firstTheme = R.style.Theme_Blue;
+                setAppTheme(R.style.Theme_Blue);
                 break;
             }
         }
         recreate();
 
+    }
+    protected void setAppTheme(int codeStyle) {
+        SharedPreferences sharedPref = getSharedPreferences(PREF_MAME, MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPref.edit();
+        editor.putInt(PREF_THEME_KEY, codeStyle);
+        editor.apply();
+    }
+
+    protected int getAppTheme() {
+        SharedPreferences sharedPref = getSharedPreferences(PREF_MAME, MODE_PRIVATE);
+        return sharedPref.getInt(PREF_THEME_KEY, R.style.Theme_Homework);
     }
 }
