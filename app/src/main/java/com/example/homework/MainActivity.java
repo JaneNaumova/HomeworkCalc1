@@ -1,5 +1,6 @@
 package com.example.homework;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
@@ -48,6 +49,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     TextView tvWindowBtn;
 
 
+
+
     private static final String PREF_MAME = ("key_pref");
     private static final String PREF_THEME_KEY = ("key_pref_theme");
 
@@ -64,6 +67,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         intView();
         setListeners();
+
+
+
+
 
     }
 
@@ -277,6 +284,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         }
         recreate();
+
+
+
 
     }
     protected void setAppTheme(int codeStyle) {
