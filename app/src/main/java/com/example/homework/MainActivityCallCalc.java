@@ -18,18 +18,16 @@ public class MainActivityCallCalc extends AppCompatActivity implements View.OnCl
 
         call_calc = findViewById(R.id.call_calk);
 
+        call_calc.setOnClickListener(this);
+
 
     }
 
-    @Override
-    public void onClick(View view) {
-        call_calc.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick (View view){
                 Intent intent = new Intent("CallCalc");
                 startActivity(intent);
             }
-        });
-    }
+
 
 }
